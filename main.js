@@ -106,7 +106,9 @@ function my_keydown(e)
 	{
 		if(ball_x <=1050)
 		{
-			// Write a code to move ball right side.
+			ball_x = ball_x + block_image_width;
+			canvas.remove(ball_obj);
+			new_image();
 		}
 	}
 	
